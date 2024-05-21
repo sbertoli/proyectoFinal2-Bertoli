@@ -20,6 +20,18 @@
 }
 
 
-#total {
+#totales {
     text-align: center;
+}
+
+#notiVacio{
+    text-align: center;
+    font-weight: bold;
+}
+
+
+
+#hoverVacio:hover{
+    transform: scale(1.1);
+    color: red;
 }

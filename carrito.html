@@ -19,11 +19,12 @@
 		</nav>
 	</header>
 	<main>
+		<p id="notiVacio">OH! parece que no tienes ningun producto en tu carrito! que te parece si agregamos alguno? <a id="hoverVacio" href="index.html">Haz click aqui!</a></p>
 		<section id="contenedorProductos"></section>
-		<section id="total">
-			<p>Productos totales: <span id="producTot">0</span></p>
-			<p>Precio final: $<span id="precioFi">0</span></p>
-			<button>Eliminar carrito</button>
+		<section id="totales">
+			<p>Productos totales: <span id="unidades">0</span></p>
+			<p>Precio final: $<span id="precio">0</span></p>
+			<button id="reseteo">Eliminar carrito</button>
 		</section>
 	</main>
 	<footer>Vivi la verdadera experiencia, de tomar un buen cafe...</footer>
@@ -35,7 +36,7 @@
 
 
 
-
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 	<script src="js/carrito.js"></script>
 	<script src="js/carritoFunc.js"></script>
 

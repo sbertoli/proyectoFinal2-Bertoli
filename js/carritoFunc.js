@@ -21,10 +21,10 @@ function agregarAlCarrito(producto){
             contador = nuevaMemoria[productoIndex].cantidad;
         }
         localStorage.setItem("cafes", JSON.stringify(nuevaMemoria));
-        return contador;
+        
     } 
     actualizarNumCarrito();
-
+    return contador;
 }
 
 function quitarDelCarrito(producto){
@@ -38,6 +38,7 @@ function quitarDelCarrito(producto){
         memoria[productoIndex].cantidad--;
     }
     localStorage.setItem("cafes", JSON.stringify(memoria));
+    actualizarNumCarrito();
 
 }
 
@@ -49,8 +50,15 @@ function getNuevoProducto(producto){
 const numeroCarritoHtml = document.querySelector("#numeroCarrito");
 function actualizarNumCarrito(){
     const memoria = JSON.parse(localStorage.getItem("cafes"));
+    if(memoria && memoria.length >0){
+
+    
     const contar = memoria.reduce((acum, current) => acum+current.cantidad,0)
     numeroCarritoHtml.innerText = contar;
+} else {
+    numeroCarritoHtml.innerText = 0;
+}
+
 }
 
 actualizarNumCarrito();
