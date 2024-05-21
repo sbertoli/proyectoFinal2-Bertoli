@@ -1,0 +1,32 @@
+#contenedorProductos{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin: auto;
+
+
+}
+
+.tarjetaProducto{
+  max-width: 400px;
+  text-align: center;
+  background-color: rgb(255, 157, 9);
+  padding: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+  transition: 200ms ease;
+
+}
+
+.tarjetaProducto:hover{
+  translate: 0 -10px;
+  box-shadow: 0 10px 5px rgba(0, 0, 0, 0.25);
+}
+h3, p {
+  margin: 7px 0;
+}
+
+.tarjetaProducto img {
+  width: 100%;
+  aspect-ratio: 1.1;
+}
+
