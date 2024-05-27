@@ -27,9 +27,33 @@ header{
   margin-bottom: 10px;
 }
 header nav img {
-  height: 25px;
+  height: 80px;
 }
-
+#titulo-nav{
+  font-family: "Cookie", cursive;
+  font-size: 50px;
+  padding: 0;
+  margin: auto;
+  animation: parpadeo  2s infinite ease-in-out;
+}
+@keyframes parpadeo {
+  0%{
+    transform: scale(0.9);
+  }
+  25%{
+    transform: scale(1);
+  }
+  50%{
+    transform: scale(0.9);
+  }
+  75%{
+    transform: scale(1);
+  }
+  100%{
+    transform: scale(0.9);
+  }
+  
+}
 header nav  div{
   display: flex;
   align-items: center;
